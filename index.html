@@ -12,14 +12,14 @@
   <body>
     <!-- Navigation Bar -->
 
-    <div class="container" id="header">
+    <div class="container-lg" id="header">
       <div class="row py-2">
         <img src="" class="d-block w-100 bd-highlight" alt="" />
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-danger">
-      <div class="container text-white text-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-danger" role="navigation">
+      <div class="container text-white text-center d-flex">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
@@ -96,7 +96,7 @@
     <!-- SlideShow -->
 
     <section class="bg-secondary">
-      <div class="container-xxl">
+      <div class="container-lg mb-4 mb-lg-0">
         <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -130,10 +130,10 @@
 
     <div class="bg-light text-dark">
       <div class="row">
-        <div class="col-2 bg-warning pe-2">
-          <div class="bg-success text-light text-center lead p-2">Flash News</div>
-        </div>
-        <div class="col-10 bg-light ps-2">
+        <div class="col-md-2 bg-warning pe-2">
+          <div class="bg-success text-light text-center lead p-3 px-4">Flash News</div>
+        </div> 
+        <div class="col-md-10 col-12 bg-light ps-2">
           <div class="lead pt-2 pb-2 fw-bold">
             <marquee behavior="" direction="left" onmouseover="this.stop()" onmouseout="this.start()"
               >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, atque! Quasi repudiandae velit nihil placeat quae nam voluptates, earum cum? Dicta asperiores possimus sed perferendis, omnis similique quis cupiditate
@@ -149,8 +149,8 @@
     <section>
       <div class="bg-ligh text-dark">
         <div class="row">
-          <img src="" alt="" class="col-5 bd-highlight float-start d-40" />
-          <div class="col-7 py-4 pe-2">
+          <img src="" alt="" class="col-lg-5 bd-highlight" />
+          <div class="col-lg-7 py-4 pe-2">
             <h3 class="text-center">Welcome to (School Name)</h3>
             <div class="pt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, dolores distinctio eveniet omnis voluptatibus voluptatum! Cumque corrupti corporis, at quos quo consequatur ad id vitae iure consectetur soluta excepturi doloribus
@@ -167,7 +167,7 @@
 
     <section>
       <div class="row">
-        <div class="col-5 bg-light p-4">
+        <div class="col-lg-5 bg-light p-4">
           <div class="bg-danger ps-2">
             <div class="bg-light p-2">
               <h3>Latest News</h3>
@@ -181,7 +181,7 @@
             <button class="btn btn-danger">Read More</button>
           </div>
         </div>
-        <div class="col-7 bg-primary text-light p-3">
+        <div class="col-lg-7 bg-primary text-light p-3">
           <div class="bg-light ps-2">
             <div class="bg-primary opacity-75 p-2">
               <h3>Principal Message</h3>
@@ -198,7 +198,7 @@
 
     <section>
       <div class="row bg-dark text-light p-3 g-4">
-        <div class="col p-2">
+        <div class="col-lg p-2">
           <div class="bg-danger ps-2">
             <h4 class="bg-light text-dark p-2">Daily Thoughts</h4>
           </div>
@@ -206,7 +206,7 @@
 
           </div>
         </div>
-        <div class="col p-2">
+        <div class="col-lg p-2">
           <div class="bg-danger ps-2">
             <h4 class="bg-light text-dark p-2">Birthday Celebrants</h4>
           </div>
@@ -239,7 +239,7 @@
             </div>
           </div>
         </div>
-        <div class="col p-2">
+        <div class="col-lg p-2">
           <div class="bg-danger ps-2">
             <h4 class="bg-light text-dark p-2">Upcoming Events</h4>
           </div>
@@ -259,7 +259,7 @@
     <section id="footer"> 
       <div class="bg-danger text-light p-5">
         <div class="row">
-          <div class="col mx-2">
+          <div class="col-lg mx-2">
             <h3 id="title" class="fw-bold">
               About-Us
             </h3>
@@ -267,7 +267,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi labore earum mollitia laudantium in nihil sequi soluta repellendus impedit quibusdam ex officia quidem dolores quia, rerum tempore iusto assumenda porro voluptatibus deleniti praesentium commodi corrupti sunt? Aperiam cum alias eligendi sed officia, doloremque atque sunt recusandae maiores distinctio iure tenetur!
             </p>
           </div>
-          <div class="col mx-2">
+          <div class="col-lg mx-2">
             <h3 id="title" class="fw-bold">
               Contact-Us
             </h3>
@@ -286,7 +286,7 @@
         </div>
       </div>
     </section>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="./dist/js/bootstrap.js"></script>
