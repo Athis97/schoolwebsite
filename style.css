@@ -1,0 +1,64 @@
+.nav-link
+{
+    font-size: 13px;
+    font-family: Montserrat-Regular;
+    width: auto;
+    text-transform: capitalize;
+}
+
+section
+{
+    min-height: 300px;
+}
+
+#carouselIndicators img
+{
+    min-height: 350px;
+}
+
+#header img
+{
+    min-height: 150px;
+}
+
+#principal
+{
+    text-justify: auto;
+}
+
+#carouselExampleIndicators
+{
+    min-height: 200px;
+    min-width: 200px;
+}
+
+#carouselExampleIndicators img
+{
+    min-height: 200px;
+    min-width: 200px;
+    justify-content: center;
+}
+
+#title::after {
+    background-color: #304c9b;
+    width: 40px;
+    content: "";
+    height: 2px;
+    display: block;
+    margin-top: 15px;;
+}
+
+.carousel-indicators
+{
+    transform: translateY(45px);
+}
+
+.carousel-control-prev
+{
+    transform: translateX(-40px);
+}
+
+.carousel-control-next
+{
+    transform: translateX(40px);
+}
