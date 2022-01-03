@@ -7,12 +7,15 @@
     <title>School Name</title>
     <link rel="stylesheet" href="./css/fontawesome.css" />
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script src="./js/jquery.nicescroll.min.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
 
-    <div class="container-lg" id="header">
+    <div class="container-lg animate__animated animate__slow animate__fadeIn" id="header">
       <div class="row py-2">
         <img src="" class="d-block w-100 bd-highlight" alt="" />
       </div>
@@ -23,7 +26,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav animate__animated animate__slow animate__fadeIn">
             <li class="nav-item">
               <a href="#" class="nav-link text-white text-center p-1 mx-1">Home</a>
             </li>
@@ -95,7 +98,7 @@
 
     <!-- SlideShow -->
 
-    <section class="bg-secondary">
+    <section class="bg-secondary" id="slideshow">
       <div class="container-lg mb-4 mb-lg-0">
         <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -114,11 +117,11 @@
               <img src="..." class="d-block w-100 bd-highlight" alt="..." />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev animate__animated animate__slow animate__fadeInRight" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <button class="carousel-control-next animate__animated animate__slow animate__fadeInLeft" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -128,15 +131,15 @@
 
     <!-- Marquee -->
 
-    <div class="bg-light text-dark">
+    <div class="bg-light text-dark" id="marquee">
       <div class="row">
         <div class="col-md-2 bg-warning pe-2">
-          <div class="bg-success text-light text-center lead p-3 px-4">Flash News</div>
+          <div class="bg-success text-light text-center lead p-3 px-4 animate__animated animate__slow animate__shakeX">Flash News</div>
         </div> 
         <div class="col-md-10 col-12 bg-light ps-2">
           <div class="lead pt-2 pb-2 fw-bold">
-            <marquee behavior="" direction="left" onmouseover="this.stop()" onmouseout="this.start()"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, atque! Quasi repudiandae velit nihil placeat quae nam voluptates, earum cum? Dicta asperiores possimus sed perferendis, omnis similique quis cupiditate
+            <marquee behavior="" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, atque! Quasi repudiandae velit nihil placeat quae nam voluptates, earum cum? Dicta asperiores possimus sed perferendis, omnis similique quis cupiditate
               veniam.</marquee
             >
           </div>
@@ -146,12 +149,12 @@
 
     <!-- History of School -->
 
-    <section>
+    <section id="history">
       <div class="bg-ligh text-dark">
         <div class="row">
           <img src="" alt="" class="col-lg-5 bd-highlight" />
           <div class="col-lg-7 py-4 pe-2">
-            <h3 class="text-center">Welcome to (School Name)</h3>
+            <h3 class="text-center animate__animated animate__slow animate__bounceIn">Welcome to (School Name)</h3>
             <div class="pt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, dolores distinctio eveniet omnis voluptatibus voluptatum! Cumque corrupti corporis, at quos quo consequatur ad id vitae iure consectetur soluta excepturi doloribus
               veritatis similique debitis? Pariatur eaque ut voluptatum quae et provident unde cupiditate blanditiis accusamus consequuntur, eveniet, officiis laudantium ex magnam vitae illo quasi? Ratione beatae numquam impedit voluptate, eveniet
@@ -165,12 +168,12 @@
 
     <!-- Principal Message -->
 
-    <section>
+    <section id="principal">
       <div class="row">
         <div class="col-lg-5 bg-light p-4">
           <div class="bg-danger ps-2">
             <div class="bg-light p-2">
-              <h3>Latest News</h3>
+              <h3 class="animate__animated animate__slow animate__fadeInRight">Latest News</h3>
             </div>
           </div>
           <div class="p-2">
@@ -184,7 +187,7 @@
         <div class="col-lg-7 bg-primary text-light p-3">
           <div class="bg-light ps-2">
             <div class="bg-primary opacity-75 p-2">
-              <h3>Principal Message</h3>
+              <h3 class="animate__animated animate__slow animate__fadeInRight">Principal Message</h3>
             </div>
           </div>
           <p class="mt-2 ps-2 text-light" id="principal">
@@ -196,11 +199,13 @@
       </div>
     </section>
 
-    <section>
+    <section id="update">
       <div class="row bg-dark text-light p-3 g-4">
         <div class="col-lg p-2">
           <div class="bg-danger ps-2">
-            <h4 class="bg-light text-dark p-2">Daily Thoughts</h4>
+            <div class="bg-light text-dark p-2">
+              <h4 class="animate__animated animate__slow animate__fadeInRight">Daily Thoughts</h4>
+            </div>
           </div>
           <div class="mt-2">
 
@@ -208,7 +213,9 @@
         </div>
         <div class="col-lg p-2">
           <div class="bg-danger ps-2">
-            <h4 class="bg-light text-dark p-2">Birthday Celebrants</h4>
+            <div class="bg-light text-dark p-2">
+              <h4 class="animate__animated animate__slow animate__fadeInRight">Birthday Celebrants</h4>
+            </div>
           </div>
           <div class="m-3 mx-5 mb-5 px-5 justify-content-center align-content-center">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -241,7 +248,9 @@
         </div>
         <div class="col-lg p-2">
           <div class="bg-danger ps-2">
-            <h4 class="bg-light text-dark p-2">Upcoming Events</h4>
+            <div class="bg-light text-dark p-2">
+              <h4 class="animate__animated animate__slow animate__fadeInRight">Upcoming Events</h4>
+            </div>
           </div>
           <div class="mt-2">
             
@@ -252,7 +261,7 @@
 
     <!-- Event Gallery -->
 
-    <section></section>
+
 
     <!-- Footer -->
 
@@ -260,7 +269,7 @@
       <div class="bg-danger text-light p-5">
         <div class="row">
           <div class="col-lg mx-2">
-            <h3 id="title" class="fw-bold">
+            <h3 id="title" class="fw-bold animate__animated animate__slow animate__bounce">
               About-Us
             </h3>
             <p class="mt-4">
@@ -268,7 +277,7 @@
             </p>
           </div>
           <div class="col-lg mx-2">
-            <h3 id="title" class="fw-bold">
+            <h3 id="title" class="fw-bold animate__animated animate__slow animate__bounce">
               Contact-Us
             </h3>
             <p class="mt-4">
@@ -276,7 +285,7 @@
             </p>
           </div>
           <div class="col mx-2">
-            <h3 id="title" class="fw-bold">
+            <h3 id="title" class="fw-bold animate__animated animate__slow animate__bounce">
               Reach-Us
             </h3>
             <p class="mt-4">
@@ -287,8 +296,32 @@
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="./dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+      const h3s = document.querySelectorAll("h3")
+      
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          const currentIndex = Array.from(h3s).indexOf(entry.target)
+          if (entry.isIntersecting) {
+            h3s[currentIndex].classList.add("animate__animated")
+          } else {
+            if (entry.boundingClientRect.y > 0) {
+              h3s[currentIndex].classList.remove("animate__animated")
+            }
+          }
+        })
+      }, {
+        root: container,
+        threshold: 0.1,
+      })
+
+
+      h3s.forEach(h3 => {
+        observer.observe(h3)
+      })
+    </script>
   </body>
 </html>
